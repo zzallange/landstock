@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap");
+
+/* Common */
+.wrap {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.inner-wrap {
+  margin: 0 auto;
+  max-width: 76.8rem;
+}
+.container section {
+  margin: 0 auto;
+  max-width: 76.8rem;
+}
+.container .main-content > div {
+  padding: 2.5rem;
+  /* border: 1px solid #d7d7d7; */
+  box-sizing: border-box;
+}
+.container h3.title {
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  letter-spacing: -1.5px;
+  font-weight: 500;
+  color: #403f3f;
+}
+.container p.sub-tit {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  color: #403f3f;
+}
+
+.num-up,
+.percent-up {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #e53e4f;
+}
+.num-up {
+  margin-right: 2rem;
+}
+.num-up:after {
+  content: "";
+  position: absolute;
+  right: -1.75rem;
+  top: 40%;
+  transform: translateY(-50%);
+  border-top: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid red;
+  border-right: 0.7rem solid transparent;
+  border-left: 0.7rem solid transparent;
+}
+.total-price strong {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.column_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ico-arrow {
+  width: 1.2rem;
+  height: 1.9rem;
+  background: url("http://sunnyking77.ebiz.test/img/landstock/common/arrow-left.png")
+    no-repeat;
+  background-size: contain;
+  font-size: 0;
+  text-indent: -999px;
+  color: transparent;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background: #fff;
+}
+.header .inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  height: 4.5rem;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.header .logo {
+  display: block;
+  width: 9.6rem;
+}
+.header .logo img {
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+}
+.nav ul li a {
+  display: block;
+  height: 2.1rem;
+  font-size: 0;
+  text-indent: -999px;
+  color: transparent;
+}
+.nav ul li a.nav_notice {
+  width: 2.2rem;
+  background: url("http://sunnyking77.ebiz.test/img/landstock/common/nav-notice.png")
+    no-repeat;
+  background-size: contain;
+}
+.nav ul li a.nav_account {
+  margin-left: 2rem;
+  width: 1.85rem;
+  background: url("http://sunnyking77.ebiz.test/img/landstock/common/nav-account.png")
+    no-repeat;
+  background-size: contain;
+}
+
+/* 투자금액 확인 */
+.main-content .user-invest {
+  background: #dadfe5;
+}
+.user-invest .invest-box [class*="current-"] {
+  border-radius: 5px;
+  border: 1px solid #d7d7d7;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.current-invest {
+  padding: 2.3rem;
+}
+.current-invest .total-price {
+  margin-bottom: 0.5rem;
+  font-size: 1.9rem;
+}
+.current-invest .total-price strong {
+  font-size: 2.3rem;
+}
+.current-invest li {
+  padding: 1.5rem 0;
+  border-top: 1px solid #bfbfbf;
+  box-sizing: border-box;
+}
+.current-invest li:first-child {
+  padding-top: 0;
+  border-top: 0 none;
+}
+
+.current-invest li .column_box {
+  margin-top: 1.3rem;
+}
+.column_box .box_items {
+  display: flex;
+  align-items: center;
+}
+.column_box .box_items .thumb {
+  overflow: hidden;
+  width: 105px;
+  height: 105px;
+  border-radius: 5px;
+}
+.column_box .box_items .thumb img {
+  width: 100%;
+}
+
+.column_box .box_items .desc {
+  margin-left: 1.5rem;
+}
+.column_box .box_items .desc p {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  color: #403f3f;
+}
+.column_box .box_items .desc .price {
+  font-size: 1.5rem;
+}
+.column_box .box_items .desc .price strong {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+.column_box .box_items .text {
+  letter-spacing: -0.5px;
+  color: #3674e3;
+}
+
+.current-deposit {
+  margin-top: 2rem;
+  background: #fff;
+}
+.current-deposit a {
+  display: block;
+  padding: 2.3rem;
+  box-sizing: border-box;
+}
+.current-deposit .total-price strong {
+  font-size: 2.3rem;
+}
+
+/* 거래 가능한 건물 */
+.main-content .trading-building {
+  background: #ececec;
+}
+.trading-building ul li {
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.trading-building ul li:first-child {
+  margin-bottom: 2rem;
+}
+.trading-building ul li a {
+  display: block;
+  padding: 2.3rem;
+  box-sizing: border-box;
+}
+.trading-building .bd-name {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #565656;
+}
+.trading-building .num-up {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+/* 공모 예정인 건물 */
+.public-offering .offering-building > a {
+  display: block;
+}
+.public-offering .offering-building > a img {
+  width: 100%;
+}
+.building-info .thumb {
+  position: relative;
+}
+.building-info .info-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+}
+.building-info .info-box .info-desc {
+  position: relative;
+}
+.building-info .info-box .info-desc ul {
+}
+.offering-building .building-info .thumb {
+}
+.offering-building .building-more {
+  margin-top: 2rem;
+}
