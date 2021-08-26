@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap");
+
+.wrap {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.inner-wrap {
+  margin: 0 auto;
+  max-width: 76.8rem;
+}
+.container section {
+  margin: 0 auto;
+  max-width: 76.8rem;
+}
+.ico-arrow {
+  width: 1.2rem;
+  height: 1.9rem;
+  background: url("http://sunnyking77.ebiz.test/img/landstock/common/arrow-left.png")
+    no-repeat;
+  background-size: contain;
+  font-size: 0;
+  text-indent: -999px;
+  color: transparent;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background: #fff;
+}
+.header .inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  height: 4.5rem;
+  box-sizing: border-box;
+}
+.header .logo {
+  display: block;
+  width: 9.6rem;
+}
+.header .logo img {
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+}
+.nav ul li a {
+  display: block;
+  height: 2.1rem;
+  font-size: 0;
+  text-indent: -999px;
+  color: transparent;
+}
+.nav ul li a.nav_notice {
+  width: 2.2rem;
+  background: url("http://sunnyking77.ebiz.test/img/landstock/common/nav-notice.png")
+    no-repeat;
+  background-size: contain;
+}
+.nav ul li a.nav_account {
+  margin-left: 2rem;
+  width: 1.85rem;
+  background: url("http://sunnyking77.ebiz.test/img/landstock/common/nav-account.png")
+    no-repeat;
+  background-size: contain;
+}
+
+/* sub-nav */
+.top-nav {
+  display: flex;
+  width: 100%;
+}
+.top-nav a {
+  display: block;
+  width: 1.2rem;
+  height: 1.9rem;
+  transform: rotate(180deg);
+  background: url("http://sunnyking77.ebiz.test/img/landstock/common/arrow-left.png")
+    no-repeat;
+  background-size: contain;
+  font-size: 0;
+  text-indent: -999px;
+  color: transparent;
+}
+.top-nav h2 {
+  margin: 0 auto;
+  font-size: 1.7rem;
+}

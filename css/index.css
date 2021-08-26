@@ -1,16 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap");
-
-/* Common */
-.wrap {
-  font-family: "Noto Sans KR", sans-serif;
-}
-.inner-wrap {
-  margin: 0 auto;
-  max-width: 76.8rem;
-}
-.container section {
-  margin: 0 auto;
-  max-width: 76.8rem;
+.header .inner-wrap {
+  border-bottom: 1px solid #ddd;
 }
 .container .main-content > div {
   padding: 2.5rem;
@@ -62,63 +51,6 @@
   justify-content: space-between;
   align-items: center;
 }
-.ico-arrow {
-  width: 1.2rem;
-  height: 1.9rem;
-  background: url("http://sunnyking77.ebiz.test/img/landstock/common/arrow-left.png")
-    no-repeat;
-  background-size: contain;
-  font-size: 0;
-  text-indent: -999px;
-  color: transparent;
-}
-
-/* Header */
-.header {
-  width: 100%;
-  background: #fff;
-}
-.header .inner-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2.5rem;
-  height: 4.5rem;
-  border-bottom: 1px solid #ddd;
-  box-sizing: border-box;
-}
-.header .logo {
-  display: block;
-  width: 9.6rem;
-}
-.header .logo img {
-  width: 100%;
-}
-
-.nav ul {
-  display: flex;
-}
-.nav ul li a {
-  display: block;
-  height: 2.1rem;
-  font-size: 0;
-  text-indent: -999px;
-  color: transparent;
-}
-.nav ul li a.nav_notice {
-  width: 2.2rem;
-  background: url("http://sunnyking77.ebiz.test/img/landstock/common/nav-notice.png")
-    no-repeat;
-  background-size: contain;
-}
-.nav ul li a.nav_account {
-  margin-left: 2rem;
-  width: 1.85rem;
-  background: url("http://sunnyking77.ebiz.test/img/landstock/common/nav-account.png")
-    no-repeat;
-  background-size: contain;
-}
-
 /* 투자금액 확인 */
 .main-content .user-invest {
   background: #dadfe5;
@@ -245,15 +177,67 @@
   position: absolute;
   left: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
   color: #fff;
 }
+.building-info .info-box .info-name {
+  position: relative;
+  padding: 3rem;
+}
+.building-info .info-box .info-name em {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+}
+.building-info .info-box .info-name {
+  font-size: 2rem;
+}
 .building-info .info-box .info-desc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3rem;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+.building-info .info-box .info-desc ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+  font-size: 1.7rem;
+}
+
+.building-more {
+  margin-top: 2rem;
   position: relative;
 }
-.building-info .info-box .info-desc ul {
+.building-more .info-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 3rem;
+  color: #fff;
 }
-.offering-building .building-info .thumb {
+.building-more .info-box p {
+  margin-bottom: 1.2rem;
+  font-size: 3rem;
+  letter-spacing: -1.5px;
 }
-.offering-building .building-more {
-  margin-top: 2rem;
+.building-more .info-box .more {
+  position: relative;
+  letter-spacing: -0.5px;
+}
+.building-more .info-box .more:before {
+  content: "";
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+  right: -1.6rem;
+  border-top: 0.8rem solid transparent;
+  border-left: 1rem solid #fff;
+  border-bottom: 0.8rem solid transparent;
 }

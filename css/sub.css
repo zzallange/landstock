@@ -1,0 +1,46 @@
+/* 알림 - notice.html */
+.notice-list li {
+  padding: 2rem 3rem;
+  border-bottom: 1px solid #d7d7d7;
+  box-sizing: border-box;
+  letter-spacing: -0.5px;
+  color: #403f3f;
+}
+.notice-list li .tit {
+  font-size: 2rem;
+
+  font-weight: 600;
+}
+.notice-list li .text {
+  margin: 1rem 0;
+}
+.notice-list li .date {
+  font-size: 1.5rem;
+  color: #6b6b6b;
+}
+
+/* 계정 -account.html */
+.user-account ul li {
+  padding: 2rem 3rem;
+  border-bottom: 1px solid #d7d7d7;
+  letter-spacing: -0.5px;
+  color: #403f3f;
+}
+.user-account ul li > div,
+.user-account ul li a {
+  display: flex;
+  justify-content: space-between;
+}
+.user-account > div .list-title {
+  margin-top: 2rem;
+  padding-left: 3rem;
+}
+.user-account .info-list li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-account .info-list .user-name {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
