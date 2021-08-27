@@ -1,3 +1,28 @@
+:root {
+  --sub-text: #403f3f;
+  --main-color: #3f70ea;
+  --border-color: #d7d7d7;
+}
+
+.top-visual .price {
+  margin: 3rem 0 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.top-visual .price span {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 1.7rem;
+  color: #403f3f;
+}
+.top-visual .price strong {
+  margin-right: 0.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+/* //common */
+
 /* 알림 - notice.html */
 .notice-list li {
   padding: 2rem 3rem;
@@ -32,10 +57,12 @@
   justify-content: space-between;
 }
 .user-account > div .list-title {
-  margin-top: 2rem;
+  margin: 3rem 0 1.5rem;
   padding-left: 3rem;
+  font-weight: 600;
 }
-.user-account .info-list li a {
+.user-account .info-list li .link-item,
+.user-account .info-list .list_item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,4 +70,223 @@
 .user-account .info-list .user-name {
   margin-bottom: 1.5rem;
   font-size: 3rem;
+}
+.user-account .info-list .text {
+  max-width: 34rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* 예치금 deposit.html */
+.content_deposit {
+  padding: 0 2.5rem;
+  box-sizing: border-box;
+}
+.content_deposit .top-visual .price strong {
+  color: #000;
+}
+
+.content_deposit .account-link {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.content_deposit .account-link li {
+  width: 49%;
+  max-width: 28rem;
+}
+.content_deposit .account-link li:first-child {
+  margin-right: 1.5rem;
+}
+.content_deposit .account-link li a {
+  display: block;
+  height: 4.3rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #f6f7f9;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 4.3rem;
+  color: #3f70ea;
+}
+
+.content_deposit .transaction-history {
+  margin-top: 4rem;
+  color: #403f3f;
+}
+.transaction-history h4 {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  letter-spacing: -0.5px;
+}
+
+.expense-box li {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #d7d7d7;
+  box-sizing: border-box;
+}
+.expense-box li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expense-box li a .item-name p {
+  margin-bottom: 0.7rem;
+  font-size: 1.6rem;
+}
+.expense-box li a .item-name span {
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  color: #6b6b6b;
+}
+.expense-box li a .item-price {
+  text-align: right;
+}
+.expense-box li a .item-price strong {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 1.6rem;
+}
+.expense-box li a .item-price span {
+  font-size: 1.4rem;
+}
+.expense-box li a .item-price .income {
+  color: #3f70ea;
+}
+.expense-box li a .item-price .expense {
+  color: #000;
+}
+
+/* 상세내역 - deposit-history.html */
+.content_history {
+  padding: 0 2.5rem;
+  box-sizing: border-box;
+}
+.content_history .top-visual .price {
+  color: #3f70ea;
+}
+.content_history .trading-statment {
+  margin-top: 4rem;
+}
+.trading-statment ul {
+  padding-bottom: 1.7rem;
+  border-top: 1px solid #d7d7d7;
+  box-sizing: border-box;
+}
+.trading-statment ul:first-child {
+  border-top: 0 none;
+}
+.trading-statment ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  color: #403f3f;
+}
+.trading-statment ul li span {
+  letter-spacing: -1px;
+}
+.trading-statment .income-tax li span:last-child strong {
+  color: #000;
+}
+
+/* 예치금-입금,출금 account- */
+.content_accont {
+  margin-top: 3rem;
+  padding: 0 2.5rem;
+  box-sizing: border-box;
+}
+.account-box ul {
+  position: relative;
+  padding: 1.3rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 7px;
+  box-sizing: border-box;
+  background: #f6f7f9;
+}
+.account-box ul:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 1rem solid #3f70ea;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+}
+.account-box .account-deposit {
+  margin-bottom: 4rem;
+}
+.account-box .account-deposit:after {
+  bottom: -2.5rem;
+}
+.account-box .account-withdraw {
+  margin-top: 4rem;
+}
+.account-box .account-withdraw:after {
+  top: -3rem;
+}
+.account-box ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.account-box ul li:first-child {
+  margin-top: 0;
+}
+.account-box ul li span {
+  font-size: 1.45rem;
+  letter-spacing: -1px;
+  color: #403f3f;
+}
+
+.content_accont [class*="price-"] {
+  position: relative;
+}
+.content_accont [class*="price-"] input {
+  padding-left: 1.5rem;
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #3f70ea;
+  border-radius: 5px;
+}
+::-webkit-input-placeholder {
+  line-height: normal;
+}
+.content_accont [class*="price-"] input::placeholder {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #b6b6b6;
+}
+.content_accont [class*="price-"] .label {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.7rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #eef4ff;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  color: #3f70ea;
+}
+
+.content_accont .remain-amount {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  color: #403f3f;
+}
+.content_accont .minimum {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+  color: #403f3f;
+}
+
+/* 빌딩정보_공모 */
+.content-building {
 }

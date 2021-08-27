@@ -9,7 +9,9 @@
 }
 .container section {
   margin: 0 auto;
+  padding-bottom: 5rem;
   max-width: 76.8rem;
+  box-sizing: border-box;
 }
 .ico-arrow {
   width: 1.2rem;
@@ -87,4 +89,5 @@
 .top-nav h2 {
   margin: 0 auto;
   font-size: 1.7rem;
+  color: #403f3f;
 }
