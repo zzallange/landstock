@@ -16,8 +16,7 @@
 .ico-arrow {
   width: 1.2rem;
   height: 1.9rem;
-  background: url("http://sunnyking77.ebiz.test/img/landstock/common/arrow-left.png")
-    no-repeat;
+  background: url("http://img.landstock.co.kr/common/arrow-left.png") no-repeat;
   background-size: contain;
   font-size: 0;
   text-indent: -999px;
@@ -57,15 +56,13 @@
 }
 .nav ul li a.nav_notice {
   width: 2.2rem;
-  background: url("http://sunnyking77.ebiz.test/img/landstock/common/nav-notice.png")
-    no-repeat;
+  background: url("http://img.landstock.co.kr/common/nav-notice.png") no-repeat;
   background-size: contain;
 }
 .nav ul li a.nav_account {
   margin-left: 2rem;
   width: 1.85rem;
-  background: url("http://sunnyking77.ebiz.test/img/landstock/common/nav-account.png")
-    no-repeat;
+  background: url("http://img.landstock.co.kr/common/nav-account.png") no-repeat;
   background-size: contain;
 }
 
@@ -74,13 +71,12 @@
   display: flex;
   width: 100%;
 }
-.top-nav a {
+.top-nav .btn-back {
   display: block;
   width: 1.2rem;
   height: 1.9rem;
   transform: rotate(180deg);
-  background: url("http://sunnyking77.ebiz.test/img/landstock/common/arrow-left.png")
-    no-repeat;
+  background: url("http://img.landstock.co.kr/common/arrow-left.png") no-repeat;
   background-size: contain;
   font-size: 0;
   text-indent: -999px;
@@ -90,4 +86,98 @@
   margin: 0 auto;
   font-size: 1.7rem;
   color: #403f3f;
+}
+
+.top-nav .btn-close {
+  position: absolute;
+  left: 2rem;
+  top: 0.8rem;
+}
+.top-nav .btn-close span {
+  position: relative;
+  display: block;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+}
+.top-nav .btn-close span:before,
+.top-nav .btn-close span:after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  background-color: #6b6b6b;
+}
+.top-nav .btn-close span:before {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+.top-nav .btn-close span:after {
+  transform: rotate(45deg) translate(9px, 9px);
+}
+
+/* notice-column */
+.notice-column li {
+  padding: 2rem 0;
+  border-bottom: 1px solid #d7d7d7;
+  box-sizing: border-box;
+}
+.notice-column li:first-child {
+  padding: 1.5rem 0 2rem;
+}
+.notice-column li p {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+}
+.notice-column li .organize {
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  color: #6b6b6b;
+}
+.notice-column li .organize span {
+  position: relative;
+  padding-right: 1.5rem;
+}
+.notice-column li .organize span:before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 1px;
+  height: 1.2rem;
+  background: #6b6b6b;
+}
+.notice-column li .organize span:first-child:before {
+  display: none;
+}
+
+/* column-list */
+.column-list a {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+  box-sizing: border-box;
+  color: #565656;
+}
+.column-list a .tit {
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+}
+.column-list a .ico-arrow {
+  width: 0.9rem;
+  height: 1.3rem;
+}
+
+/* list-items */
+.list-items li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size: 1.55rem;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  color: #403f3f;
+}
+.list-items li div:first-child {
+  font-weight: 500;
 }
