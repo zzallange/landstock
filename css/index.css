@@ -1,7 +1,7 @@
 .header .inner-wrap {
   border-bottom: 1px solid #ddd;
 }
-.container .main-content > div {
+.container .main_content > div {
   padding: 2.5rem;
   /* border: 1px solid #d7d7d7; */
   box-sizing: border-box;
@@ -53,7 +53,7 @@
   align-items: center;
 }
 /* 투자금액 확인 */
-.main-content .user-invest {
+.main_content .user-invest {
   background: #dadfe5;
 }
 .user-invest .invest-box [class*="current-"] {
@@ -152,7 +152,7 @@
 }
 
 /* 거래 가능한 건물 */
-.main-content .trading-building {
+.main_content .trading-building {
   background: #ececec;
 }
 .trading-building ul li {
@@ -200,7 +200,7 @@
 }
 .building-info .info-box .info-name {
   position: relative;
-  padding: 3rem;
+  padding: 2rem;
 }
 .building-info .info-box .info-name em {
   display: block;
@@ -215,15 +215,16 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 3rem;
-  padding: 0 3rem;
+  bottom: 2.5rem;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 .building-info .info-box .info-desc ul li {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.2rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
+  letter-spacing: -1px;
 }
 
 .building-more {
@@ -236,7 +237,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  padding: 0 3rem;
+  padding: 0 2rem;
   color: #fff;
 }
 .building-more .info-box p {
