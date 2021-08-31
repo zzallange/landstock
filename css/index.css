@@ -16,32 +16,8 @@
 .column_box .box_items .thumb .container p.sub-tit {
   margin-bottom: 0.5rem;
   font-size: 1.6rem;
-  letter-spacing: -0.5px;
-  color: #403f3f;
 }
 
-.num-up,
-.percent-up {
-  position: relative;
-  font-size: 1.7rem;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  color: #e53e4f;
-}
-.num-up {
-  margin-right: 2rem;
-}
-.num-up:after {
-  content: "";
-  position: absolute;
-  right: -1.75rem;
-  top: 40%;
-  transform: translateY(-50%);
-  border-top: 1.2rem solid transparent;
-  border-bottom: 1.2rem solid red;
-  border-right: 0.7rem solid transparent;
-  border-left: 0.7rem solid transparent;
-}
 .total-price strong {
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -68,8 +44,6 @@
 }
 .current-invest .sub-tit {
   font-size: 1.55rem;
-  letter-spacing: -1px;
-  color: #403f3f;
 }
 .current-invest .total-price {
   margin: 0.5rem 0 0.7rem;
@@ -139,7 +113,6 @@
 }
 .current-deposit .sub-tit {
   margin-bottom: 0.5rem;
-  color: #403f3f;
 }
 .current-deposit a {
   display: block;
@@ -168,12 +141,6 @@
   display: block;
   padding: 2.3rem;
   box-sizing: border-box;
-}
-.trading-building .bd-name {
-  margin-bottom: 0.5rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #565656;
 }
 .trading-building .num-up {
   font-size: 2.1rem;

@@ -13,7 +13,9 @@
   max-width: 76.8rem;
   box-sizing: border-box;
 }
-.container section > div:not(.main_content, .content_building) {
+.container
+  section
+  > div:not(.main_content, .content_building, .content_trading) {
   padding: 4rem 2.5rem 0;
   box-sizing: border-box;
 }
@@ -149,7 +151,49 @@
   transform: translateY(-50%);
 }
 
-/* Btn-style : offering */
+/* price-percentUp */
+.num-up,
+.percent-up {
+  position: relative;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #e53e4f;
+}
+.num-up {
+  margin-right: 2rem;
+}
+.num-up:after {
+  content: "";
+  position: absolute;
+  right: -1.75rem;
+  top: 40%;
+  transform: translateY(-50%);
+  border-top: 1.2rem solid transparent;
+  border-bottom: 1.2rem solid red;
+  border-right: 0.7rem solid transparent;
+  border-left: 0.7rem solid transparent;
+}
+.num-down {
+  color: #3f70ea;
+}
+
+.bd-name {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #565656;
+}
+
+/* sub-tit */
+.sub-tit {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  letter-spacing: -0.5px;
+  color: #403f3f;
+}
+
+/* Btn-style */
 [class*="btn_offering"] {
   display: block;
   margin: 3rem 0 4rem;
@@ -162,6 +206,19 @@
   font-size: 1.6rem;
   line-height: 4.3rem;
   color: #fff;
+}
+[class*="btn_more"] {
+  display: block;
+  margin: 3rem 0 4rem;
+  width: 100%;
+  height: 4.3rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #f6f7f9;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 4.3rem;
+  color: #3f70ea;
 }
 
 /* notice-column: STYLE-공지사항 및 일시 */
