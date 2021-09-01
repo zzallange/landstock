@@ -52,4 +52,25 @@ $(function () {
   $(".pop-chart").click(function () {
     $(this).hide();
   });
+
+  //매수 / 매도 / 주문
+  $(".pop-trading .tab-cont").hide();
+  $(".pop-trading .tab-cont:first-child").show();
+
+  $(".pop-trading .tab-menu a").click(function (e) {
+    e.preventDefault();
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+    $(".btm-trading").addClass("active");
+    var idx = $(".pop-trading .tab-menu a").index(this);
+    $(".pop-trading .tab-cont").hide();
+    $(".pop-trading .tab-cont").eq(idx).show();
+    $(".pop-trading").addClass("active");
+    $(".dim").addClass("on");
+  });
+
+  $(".dim").click(function () {
+    $(this).removeClass("on");
+    $(".pop-trading").removeClass("active");
+  });
 });
