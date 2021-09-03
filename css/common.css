@@ -28,9 +28,6 @@
   text-indent: -999px;
   color: transparent;
 }
-/* 
-  Layout : section > content_&&&
-*/
 
 /* Header */
 .header {
@@ -41,6 +38,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 0 2.5rem;
   height: 4.5rem;
   box-sizing: border-box;
@@ -99,8 +97,6 @@
 
 .top-nav .btn-close {
   position: absolute;
-  left: 2rem;
-  top: 0.8rem;
 }
 .top-nav .btn-close span {
   position: relative;
@@ -253,6 +249,32 @@
   background: #3f70ea;
   color: #fff;
 }
+[class*="btn-close"] {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+[class*="btn-close"] span {
+  position: relative;
+  display: block;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+}
+[class*="btn-close"] span:before,
+[class*="btn-close"] span:after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 2px;
+  background-color: #6b6b6b;
+}
+[class*="btn-close"] span:before {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+[class*="btn-close"] span:after {
+  transform: rotate(45deg) translate(9px, 9px);
+}
 
 /* notice-column: STYLE-공지사항 및 일시 */
 .notice-column li {
@@ -331,4 +353,48 @@
 .link-list li a {
   display: flex;
   justify-content: space-between;
+}
+
+/* Input check-list */
+.check-list ul li:first-child label {
+  font-size: 1.7rem;
+}
+.check-list ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  box-sizing: border-box;
+}
+.check-list ul li input {
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0;
+  outline: 0;
+}
+.check-list ul li label {
+  position: relative;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  color: #403f3f;
+}
+.check-list ul li label:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #fff;
 }

@@ -3,7 +3,6 @@
 }
 .container .main_content > div {
   padding: 2.5rem;
-  /* border: 1px solid #d7d7d7; */
   box-sizing: border-box;
 }
 .container h3.title {
@@ -28,6 +27,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 /* 투자금액 확인 */
 .main_content .user-invest {
   background: #dadfe5;

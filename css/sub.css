@@ -21,22 +21,9 @@
   font-weight: 600;
   letter-spacing: -1px;
 }
-
-/* button common
-{
-    display: block;
-    height: 4.3rem;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.6rem;
-    line-height: 4.3rem;
-    box-sizing: border-box;
-}
-*/
-
 /* //common */
 
-/* 알림 - notice.html */
+/* 메인 탑메뉴 - 알림 */
 .content_notice .notice-list li {
   padding: 2rem 0;
   border-bottom: 1px solid #d7d7d7;
@@ -60,13 +47,7 @@
   color: #6b6b6b;
 }
 
-/* 계정 -account.html */
-/* .content_mypage > div ul li {
-  padding: 2rem 0;
-  border-bottom: 1px solid #d7d7d7;
-  letter-spacing: -0.5px;
-  color: #403f3f;
-} */
+/* 메인 탑메뉴 - 계정 */
 .content_mypage > div .list-title {
   margin: 3rem 0 1.5rem;
   font-weight: 600;
@@ -301,30 +282,8 @@
   position: relative;
 }
 .content_building .btn-close {
-  position: absolute;
   left: 2rem;
   top: 2rem;
-}
-.content_building .btn-close span {
-  position: relative;
-  display: block;
-  font-size: 0;
-  width: 30px;
-  height: 30px;
-}
-.content_building .btn-close span:before,
-.content_building .btn-close span:after {
-  content: "";
-  display: block;
-  width: 75%;
-  height: 2px;
-  background-color: #6b6b6b;
-}
-.content_building .btn-close span:before {
-  transform: rotate(-45deg) translate(-10px, 10px);
-}
-.content_building .btn-close span:after {
-  transform: rotate(45deg) translate(9px, 9px);
 }
 
 .content_building figure {
@@ -442,8 +401,6 @@
   color: #3f70ea;
 }
 
-/* 공시 */
-
 /* 투자포인트 요약 */
 .invest-info .sub-tit {
   margin-bottom: 2.5rem;
@@ -535,8 +492,6 @@
 }
 
 /* 공시 & 기준가 */
-.content_offering-more {
-}
 .visual-menu {
   display: flex;
   justify-content: space-between;
@@ -559,7 +514,6 @@
 }
 
 /* 거래건물 */
-
 .content_trading .building-name {
   padding: 3rem 2rem;
 }
@@ -694,8 +648,6 @@
 }
 
 /* 거래가 - 시세: 실시간,일별 */
-.trading-cont .quote-chart {
-}
 .quote-chart .quote-menu {
   display: flex;
   margin-bottom: 3rem;
@@ -739,8 +691,8 @@
   top: 30%;
   width: 1.8rem;
   height: 1.6rem;
-  background: url("/img/ico-updown.png") no-repeat;
-  /* background: url("http://img.landstock.co.kr/building/ico-updown.png") no-repeat; */
+  background: url("http://img.landstock.co.kr/building/ico-updown.png")
+    no-repeat;
   background-size: contain;
 }
 .quote-chart [class*="-chart"] th:last-child {
@@ -800,11 +752,6 @@
 }
 .quote-chart [class*="-chart"] .num-up:after {
   display: none;
-}
-
-.quote-chart .realtime-chart {
-}
-.quote-chart .day-chart {
 }
 
 /* 하단- 매수 / 매도 / 주문 팝업 */
@@ -961,7 +908,6 @@
 }
 
 /* 주문 */
-
 .pop_trading-order .point {
   color: #eb4656;
 }
@@ -1072,6 +1018,13 @@
 }
 
 /* 회원가입 */
+.content_membership {
+  position: relative;
+}
+.top-nav .btn-close {
+  left: 2rem;
+  top: 0.8rem;
+}
 .content_membership .title {
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -1089,16 +1042,276 @@
   border-radius: 5px;
   box-sizing: border-box;
 }
-.content_membership .check-list ul li:first-child label {
-  font-size: 1.7rem;
+.content_membership .check-list ul li label:before {
+  background: #3f70ea;
 }
-.content_membership .check-list ul li a {
+.content_membership .check-list ul li .ico-arrow {
+  width: 1rem;
+  height: 1.6rem;
+}
+
+/* 이용약관-인증 */
+.content_membership .sub-txt {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  color: #5a5a5a;
+}
+.content_membership .title + .sub-txt {
+  margin-top: -1.5rem;
+  margin-bottom: 3rem;
+}
+
+.content_membership .input-list li {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.content_membership .input-list li input,
+.content_membership .input-list li select {
+  padding: 1rem;
+  max-height: 46px;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #403f3f;
+}
+.content_membership .input-list li input:not(.regist-num),
+.content_membership .input-list li select {
+  width: 100%;
+}
+.content_membership .input-list li input:focus {
+  border-color: #3f70ea;
+}
+
+.content_membership .input-list .registration-number {
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 0;
+  width: 100%;
+}
+.content_membership .input-list .registraion-number input {
+  width: 47%;
+}
+.content_membership .input-list .registraion-number input:last-child {
+  color: #8c8c8c;
+}
+.content_membership .input-list .registraion-number span {
+  margin: 0 -4px;
+  padding: 0 2%;
   box-sizing: border-box;
 }
-.content_membership .check-list ul li input {
+
+.content_membership .input-list li .btn-request {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.7rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #ddeaff;
+  font-size: 1.35rem;
+  letter-spacing: -0.5px;
+  color: #3f70ea;
+}
+.content_membership .input-list li .timer {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #8c8c8c;
+}
+
+.content_membership .title-big {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.3rem;
+  letter-spacing: -1px;
+  line-height: 1.35;
+}
+.content_membership .invest-info li {
+  margin-bottom: 2rem;
+  color: #545454;
+}
+.content_membership .invest-info li > div {
+  display: flex;
+  align-items: flex-start;
+}
+.content_membership .invest-info li > div .num {
+  display: block;
+  width: 4.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #e5e5e5;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+}
+.content_membership .invest-info li > div p {
+  margin-left: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.content_membership .invest-info li > div p span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1.45rem;
+  line-height: 1.4;
+  color: #6b6b6b;
+}
+
+.content_membership .btn-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  width: 100%;
+}
+.content_membership .btn-box a {
+  width: 48.5%;
+  text-align: center;
+  height: 4.5rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+}
+.content_membership .btn-box .btn-later {
+  background: #f6f7f9;
+  color: #3f70ea;
+}
+.content_membership .btn-box .btn-info {
+  background: #3f70ea;
+  color: #fff;
+}
+
+.content_membership .account-list li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+.content_membership .account-list li:first-child .ico-arrow {
+  filter: brightness(0) invert(1);
+}
+.account-list li .btn_account-link {
+  background: #3f70ea;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.account-list li .btn_account-make {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  border: 1px solid #d7d7d7;
+}
+.account-list li .btn_account-make p {
+  font-size: 1.5rem;
+  color: #3f70ea;
+}
+.account-list li .btn_account-make span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.35rem;
+  letter-spacing: -0.5px;
+  color: #403f3f;
+}
+
+/* 하나은행 연계 */
+.content_bank .title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  color: #403f3f;
+}
+.content_bank .sub-title {
+  margin: 4rem 0 2rem;
+  font-size: 1.7rem;
+  letter-spacing: -0.5px;
+  line-height: 1.5;
+  color: #403f3f;
+}
+.content_bank .check-list ul {
+  padding-bottom: 2rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+.content_bank .check-list ul li a {
+  padding: 0.7rem 1rem;
+  box-sizing: border-box;
+}
+.content_bank .check-list ul li:first-child {
+  margin-bottom: 2rem;
+}
+.content_bank .check-list ul li:first-child a {
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #d7d7d7;
+  box-sizing: border-box;
+}
+.content_bank .check-list ul li:first-child .ico-arrow {
+  width: 1rem;
+  height: 1.7rem;
+}
+.content_bank .check-list ul li label:before,
+.content_bank .btn-next {
+  background: #1a9d9f;
+}
+
+.content_bank .certify-box > * {
+  margin-bottom: 1rem;
+  height: 4rem;
+}
+.content_bank .certify-box > div input {
+  padding-left: 1rem;
+  height: 100%;
+  box-sizing: border-box;
+}
+.content_bank .certify-box input {
+  border-bottom: 1px solid #d7d7d7;
+  box-sizing: border-box;
+}
+
+.content_bank .user-name {
+  font-size: 1.5rem;
+  letter-spacing: -0.2px;
+  color: #403f3f;
+}
+.content_bank .user-name input {
+  width: 100%;
+}
+
+.content_bank .register-num {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content_bank .register-num input {
+  width: 47%;
+  height: 100%;
+  font-size: 1.4rem;
+}
+.content_bank .register-num input:last-child {
+  color: #8c8c8c;
+}
+
+.content_bank .phone-agree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.content_bank .phone-agree input[type="checkbox"] {
   padding: 0;
   margin: 0;
   -webkit-appearance: none;
@@ -1108,14 +1321,14 @@
   border: 0;
   outline: 0;
 }
-.content_membership .check-list ul li label {
+.content_bank .phone-agree span {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 2.7rem;
+  box-sizing: border-box;
   font-size: 1.5rem;
-  letter-spacing: -0.5px;
   color: #403f3f;
 }
-.content_membership .check-list ul li label:before {
+.content_bank .phone-agree span:before {
   content: "✔";
   position: absolute;
   left: 0;
@@ -1124,13 +1337,124 @@
   height: 2rem;
   border-radius: 50%;
   box-sizing: border-box;
-  background: #3f70ea;
+  background: #1a9d9f;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.3;
+  font-size: 1.4rem;
+  line-height: 1.4;
   color: #fff;
 }
-.content_membership .check-list ul li .ico-arrow {
-  width: 1rem;
-  height: 1.7rem;
+.content_bank .phone-agree .ico-arrow {
+  width: 0.8rem;
+  height: 1.3rem;
+}
+
+.content_bank .phone-agency {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
+  height: 6rem;
+}
+.content_bank .phone-agency li {
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.content_bank .phone-agency li a {
+  display: block;
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  border-left-color: transparent;
+  box-sizing: border-box;
+  background: #fbfbfb;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  line-height: 5.8rem;
+  color: #9d9d9d;
+}
+.content_bank .phone-agency li:first-child a {
+  border-left: 1px solid #d7d7d7;
+}
+.content_bank .phone-agency li a.active {
+  border-color: #7f7f7f;
+  box-sizing: border-box;
+  background: #fff;
+  color: #403f3f;
+}
+.content_bank .phone-agency li a.active {
+  border-left: 1px solid #7f7f7f;
+}
+.content_bank .phone-number {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.content_bank .phone-number select {
+  width: 28%;
+  border-bottom: 1px solid #d7d7d7;
+  box-sizing: border-box;
+}
+.content_bank .phone-number select option {
+  padding-left: 5rem;
+  display: block;
+  box-sizing: border-box;
+}
+.content_bank .phone-number input {
+  width: 65%;
+}
+.content_bank .btn_num-request {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 4.5rem;
+  border: 1px solid #1a9d9f;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+  line-height: 4.4rem;
+  color: #1a9d9f;
+}
+.content_bank .request-number {
+  position: relative;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.content_bank .request-number input {
+  width: 100%;
+}
+.content_bank .request-number .timer {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1a9d9f;
+}
+
+/* 투자준비완료 */
+.content_invest .title {
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 2.4rem;
+  letter-spacing: -1px;
+  color: #403f3f;
+}
+.content_invest .sub-txt {
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  color: #545454;
+}
+.content_invest .list-items {
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid #d7d7d7;
+  box-sizing: border-box;
+}
+.content_invest .list-items div:last-child {
+  font-weight: 500;
 }
